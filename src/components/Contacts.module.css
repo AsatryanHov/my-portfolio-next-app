@@ -1,0 +1,88 @@
+.iconsTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(15px + (42 - 15) * ((100vw - 320px) / (1920 - 320)));
+
+}
+
+.social_icon {
+    width: 150px;
+    height: 150px;
+}
+
+.mailContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .mailbutton {
+} */
+.mailbutton {
+    padding: 0.6rem 1.2rem;
+    /* background-color: #007bff; */
+    /* Bootstrap blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    /* font-size: 1rem; */
+    font-size: calc(15px + (42 - 15) * ((100vw - 320px) / (1920 - 320)));
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.mailbutton:hover {
+    /* background-color: #0056b3; */
+    /* Darker blue on hover */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    border: 3px solid #ffffff;
+}
+
+.mailbutton:active {
+    /* background-color: #004080; */
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2) inset;
+}
+
+
+
+
+.iconsBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+}
+
+.containerLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    /* background-color: red; */
+}
+
+.logoText {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* padding-top: calc(15px + (5 - 15) * ((100vw - 320px) / (1920 - 320))); */

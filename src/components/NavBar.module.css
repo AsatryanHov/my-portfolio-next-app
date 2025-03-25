@@ -1,5 +1,4 @@
 .navbar {
-    /* background-color: #333; */
     padding: 1rem 2rem;
     display: flex;
     justify-content: center;
@@ -7,30 +6,42 @@
 
 .navList {
     display: flex;
+    /* justify-content: space-between; */
     list-style: none;
-    gap: 20px;
+    gap: 40px;
     margin: 0;
     padding: 0;
 }
 
 .navList li {
-    padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
-.navList li a {
-    color: #fff;
+/* Теперь ссылка занимает всю область внутри <li> */
+.link {
+    display: block;
+    /* Делает всю область кликабельной */
+    width: 80%;
+    /* Растягивает ссылку по ширине */
+    padding: 0.5rem 1rem;
+    /* Соответствует размеру <li> */
+    border-radius: 4px;
+    /* Закругление краёв */
+    text-align: center;
+    /* Выравнивание текста */
     text-decoration: none;
+    /* Убирает стандартное подчеркивание */
+    color: #fff;
+    /* Цвет текста */
 }
 
-.navList li:hover {
-    /* background-color: #ffffff; */
-
+.link:hover {
+    background-color: #ffffff;
+    color: #333;
 }
 
-.active {
-    /* background-color: #0070f3; */
+.active .link {
     border: solid 1px #fff;
-    color: #a0351a;
+    /* color: #a0351a; */
 }

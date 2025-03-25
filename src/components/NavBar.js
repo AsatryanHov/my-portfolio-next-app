@@ -11,16 +11,24 @@ const NavBar = () => {
     <nav className={styles.navbar}>
       <ul className={styles.navList}>
         <li className={pathname === "/" ? styles.active : ""}>
-          <Link href="/">Main</Link>
+          <Link href="/" className={styles.link}>
+            Main
+          </Link>
         </li>
         <li className={pathname === "/education" ? styles.active : ""}>
-          <Link href="/education">Education</Link>
+          <Link href="/education" className={styles.link}>
+            Education
+          </Link>
         </li>
         <li className={pathname === "/portfolio" ? styles.active : ""}>
-          <Link href="/portfolio">Portfolio</Link>
+          <Link href="/portfolio" className={styles.link}>
+            Portfolio
+          </Link>
         </li>
         <li className={pathname === "/contacts" ? styles.active : ""}>
-          <Link href="/contacts">Contacts</Link>
+          <Link href="/contacts" className={styles.link}>
+            Contacts
+          </Link>
         </li>
       </ul>
     </nav>

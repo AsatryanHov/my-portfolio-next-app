@@ -1,7 +1,4 @@
-export default function Portfolio() {
-  return (
-    <div>
-      <h1>Portfolio</h1>
-    </div>
-  );
+import Portfolio from "@/components/Portfolio";
+export default function PortfolioPage() {
+  return <Portfolio />;
 }

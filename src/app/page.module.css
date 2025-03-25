@@ -4,6 +4,15 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+
+
+
+}
+
+
+.title {
+    font-size: 4rem;
+    margin-bottom: 4rem;
 }
 
 .description {
@@ -13,4 +22,5 @@
     justify-content: center;
     /* height: 100vh; */
     text-align: center;
+    font-size: 2rem;
 }

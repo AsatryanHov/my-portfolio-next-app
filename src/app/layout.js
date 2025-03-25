@@ -1,4 +1,6 @@
 import { Montserrat } from "next/font/google"; // Импортируем шрифт
+// import { Montserrat } from 'next/font/google';
+
 import NavBar from "@/components/NavBar";
 import VantaBackground from "@/components/VantaBackground";
 import "./globals.css";
@@ -8,6 +10,12 @@ const montserrat = Montserrat({
   weight: ["400", "600", "700"], // Указываем нужные начертания
   display: "swap", // Улучшает производительность загрузки шрифта
 });
+
+// const montserrat = Montserrat({
+//   subsets: ['latin'],
+//   weight: ["400", "600", "700"], // Убедитесь, что значения обёрнуты в кавычки
+//   display: "swap",
+// });
 
 export const metadata = {
   title: "AsatryanHov",

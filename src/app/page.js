@@ -1,5 +1,3 @@
-import VantaBackground from "@/components/VantaBackground"; // Adjust the path if necessary
-
 import "@/app/globals.css";
 import styles from "@/app/page.module.css";
 export default function Home() {
@@ -13,17 +11,6 @@ export default function Home() {
           WEB developer
         </p>
       </div>
-      {/* <VantaBackground /> */}
-      {/* <div
-        style={{
-          position: "relative",
-          zIndex: 1,
-          color: "#fff",
-          padding: "20px",
-        }}>
-        <h1>Welcome to My Next.js App</h1>
-        <p>This app has a cool Vanta Waves background!</p>
-      </div> */}
     </>
   );
 }
