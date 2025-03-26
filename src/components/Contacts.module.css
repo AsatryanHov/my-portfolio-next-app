@@ -85,4 +85,30 @@
 
 
 
+@media only screen and (max-width: 450px) {
+    .iconsTitle {
+        font-size: 25px;
+
+    }
+
+    .social_icon {
+        width: 70px;
+        height: 70px;
+        margin: 20px;
+    }
+
+    .iconsBlock {
+        flex-wrap: wrap;
+    }
+
+    .mailbutton {
+        margin-top: 20px;
+        font-weight: 700;
+
+        font-size: 25px;
+
+    }
+}
+
+
 /* padding-top: calc(15px + (5 - 15) * ((100vw - 320px) / (1920 - 320))); */

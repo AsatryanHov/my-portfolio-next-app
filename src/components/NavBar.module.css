@@ -14,6 +14,7 @@
 }
 
 .navList li {
+
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
@@ -22,7 +23,7 @@
 .link {
     display: block;
     /* Делает всю область кликабельной */
-    width: 80%;
+    width: 80px;
     /* Растягивает ссылку по ширине */
     padding: 0.5rem 1rem;
     /* Соответствует размеру <li> */
@@ -44,4 +45,33 @@
 .active .link {
     border: solid 1px #fff;
     /* color: #a0351a; */
+}
+
+@media only screen and (max-width: 450px) {
+
+    /* Styles for iPhone 14 Pro Max and similar devices */
+    .navList {
+
+        gap: 18px;
+
+    }
+
+    .link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        /* Делает всю область кликабельной */
+        width: 75px;
+        /* Растягивает ссылку по ширине */
+        padding: 0.5rem 0.5rem;
+        /* text-align: center; */
+
+    }
+
+    /* .navList li {
+        
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    } */
 }

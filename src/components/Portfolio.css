@@ -127,3 +127,31 @@
     background-color: #275bec;
     color: white;
 }
+
+.card-img-container {
+    position: relative;
+    width: 420px;
+    aspect-ratio: 7 / 5;
+    /* или задайте высоту вручную */
+}
+
+.card-img {
+    /* width: 420px; */
+    object-fit: fill;
+}
+
+@media only screen and (max-width: 450px) {
+    .card {
+        margin-bottom: 30px;
+        max-width: 350px;
+        background-color: white;
+        box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+        transition: transform 0.2s ease-in;
+    }
+
+    .card-img-container {
+        width: 300px;
+        aspect-ratio: 4 / 3;
+        /* или измените высоту */
+    }
+}

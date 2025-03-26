@@ -7,7 +7,7 @@ const instagram = "/icons/instagram.svg";
 const linkedin = "/icons/linkedin.svg";
 const x = "/icons/x.svg";
 const youtube = "/icons/youtube.svg";
-const hashnode = "/icons/hashnode.svg";
+const hashnode = "/icons/icons8-hashnode.svg";
 
 export default function Footer() {
   return (
@@ -20,7 +20,8 @@ export default function Footer() {
             href="https://www.instagram.com/asatryan_hov/"
             target="_blank"
             rel="noreferrer">
-            <Image src={instagram} alt="Instagram" width={100} height={100} />
+            {/* <Image src={instagram} alt="Instagram" width={100} height={100} /> */}
+            <img src={instagram} alt="Instagram" width={100} height={100} />
           </a>
 
           <a
@@ -28,12 +29,13 @@ export default function Footer() {
             href="https://x.com/AsatryanHov/"
             target="_blank"
             rel="noreferrer">
-            <Image
+            {/* <Image
               src={x}
               alt="X (formerly Twitter)"
               width={100}
               height={100}
-            />
+            /> */}
+            <img src={x} alt="X (formerly Twitter)" width={100} height={100} />
           </a>
 
           <a
@@ -41,7 +43,8 @@ export default function Footer() {
             href="https://www.linkedin.com/in/asatryanhov/"
             target="_blank"
             rel="noreferrer">
-            <Image src={linkedin} alt="LinkedIn" width={100} height={100} />
+            {/* <Image src={linkedin} alt="LinkedIn" width={100} height={100} /> */}
+            <img src={linkedin} alt="LinkedIn" width={100} height={100} />
           </a>
 
           <a
@@ -49,7 +52,8 @@ export default function Footer() {
             href="https://github.com/AsatryanHov"
             target="_blank"
             rel="noreferrer">
-            <Image src={github} alt="GitHub" width={100} height={100} />
+            {/* <Image src={github} alt="GitHub" width={100} height={100} /> */}
+            <img src={github} alt="Github" width={100} height={100} />
           </a>
 
           <a
@@ -57,16 +61,18 @@ export default function Footer() {
             href="https://www.youtube.com/@asatryanhov"
             target="_blank"
             rel="noreferrer">
-            <Image src={youtube} alt="YouTube" width={100} height={100} />
+            {/* <Image src={youtube} alt="YouTube" width={100} height={100} /> */}
+            <img src={youtube} alt="youtube" width={100} height={100} />
           </a>
 
-          {/* <a
+          <a
             className={styles.social_icon}
             href="https://hashnode.com/@asatryanhov"
             target="_blank"
             rel="noreferrer">
-            <Image src={hashnode} alt="Hashnode" width={100} height={100} />
-          </a> */}
+            {/* <Image src={hashnode} alt="Hashnode" width={100} height={100} /> */}
+            <img src={hashnode} alt="Hashnode" width={100} height={100} />
+          </a>
         </div>
         <div className={styles.mailContainer}>
           {/* <p>mail@asatryanhov.pl</p> */}
