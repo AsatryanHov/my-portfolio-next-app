@@ -7,9 +7,14 @@
 
 }
 
+.react-icons {
+    background-color: red;
+}
+
 .social_icon {
     width: 150px;
     height: 150px;
+    margin: 20px;
 }
 
 .mailContainer {
@@ -34,13 +39,14 @@
     font-size: calc(15px + (42 - 15) * ((100vw - 320px) / (1920 - 320)));
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border: 3px solid #ffffff;
 }
 
 .mailbutton:hover {
     /* background-color: #0056b3; */
     /* Darker blue on hover */
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
-    border: 3px solid #ffffff;
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2);
+    border: 6px solid #ffffff;
 }
 
 .mailbutton:active {

@@ -1,13 +1,23 @@
 import styles from "@/components/Contacts.module.css";
 import Image from "next/image";
-
-const my_logo = "/icons/my_logo.svg";
-const github = "/icons/github.svg";
-const instagram = "/icons/instagram.svg";
-const linkedin = "/icons/linkedin.svg";
-const x = "/icons/x.svg";
-const youtube = "/icons/youtube.svg";
-const hashnode = "/icons/icons8-hashnode.svg";
+import "@/app/globals.css";
+//++++++++++++++++
+import { FaGithub } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+import { FaHashnode } from "react-icons/fa6";
+//++++++++++++++++
+// svg icons
+import InstagramIcon from "@/components/icons/Instagram";
+import XIcon from "@/components/icons/X";
+import LinkedInIcon from "@/components/icons/Linkedin";
+import GithubIcon from "@/components/icons/Github";
+import YoutubeIcon from "@/components/icons/Youtube";
+import HashnodeIcon from "@/components/icons/Hashnode";
+import MyLogo from "@/components/icons/MyLogo";
+// import X from "@/components/icons/X";
 
 export default function Footer() {
   return (
@@ -20,8 +30,8 @@ export default function Footer() {
             href="https://www.instagram.com/asatryan_hov/"
             target="_blank"
             rel="noreferrer">
-            {/* <Image src={instagram} alt="Instagram" width={100} height={100} /> */}
-            <img src={instagram} alt="Instagram" width={100} height={100} />
+            {/* <InstagramIcon /> */}
+            <FaInstagram className="social-icon" />
           </a>
 
           <a
@@ -29,13 +39,8 @@ export default function Footer() {
             href="https://x.com/AsatryanHov/"
             target="_blank"
             rel="noreferrer">
-            {/* <Image
-              src={x}
-              alt="X (formerly Twitter)"
-              width={100}
-              height={100}
-            /> */}
-            <img src={x} alt="X (formerly Twitter)" width={100} height={100} />
+            {/* <XIcon /> */}
+            <FaXTwitter className="social-icon" />
           </a>
 
           <a
@@ -43,8 +48,8 @@ export default function Footer() {
             href="https://www.linkedin.com/in/asatryanhov/"
             target="_blank"
             rel="noreferrer">
-            {/* <Image src={linkedin} alt="LinkedIn" width={100} height={100} /> */}
-            <img src={linkedin} alt="LinkedIn" width={100} height={100} />
+            {/* <LinkedInIcon /> */}
+            <FaLinkedinIn className="social-icon" />
           </a>
 
           <a
@@ -52,8 +57,7 @@ export default function Footer() {
             href="https://github.com/AsatryanHov"
             target="_blank"
             rel="noreferrer">
-            {/* <Image src={github} alt="GitHub" width={100} height={100} /> */}
-            <img src={github} alt="Github" width={100} height={100} />
+            <FaGithub className="social-icon" />
           </a>
 
           <a
@@ -61,8 +65,7 @@ export default function Footer() {
             href="https://www.youtube.com/@asatryanhov"
             target="_blank"
             rel="noreferrer">
-            {/* <Image src={youtube} alt="YouTube" width={100} height={100} /> */}
-            <img src={youtube} alt="youtube" width={100} height={100} />
+            <FaYoutube className="social-icon" />
           </a>
 
           <a
@@ -70,12 +73,10 @@ export default function Footer() {
             href="https://hashnode.com/@asatryanhov"
             target="_blank"
             rel="noreferrer">
-            {/* <Image src={hashnode} alt="Hashnode" width={100} height={100} /> */}
-            <img src={hashnode} alt="Hashnode" width={100} height={100} />
+            <FaHashnode className="social-icon" />
           </a>
         </div>
         <div className={styles.mailContainer}>
-          {/* <p>mail@asatryanhov.pl</p> */}
           <a href="mailto:asatryanhov@wp.pl" className={styles.mailbutton}>
             asatryanhov@wp.pl
           </a>
@@ -86,7 +87,7 @@ export default function Footer() {
             className={styles.logo}
             target="_blank"
             rel="noreferrer">
-            <Image src={my_logo} alt="logo" width={200} height={170} />
+            <MyLogo />
           </a>
           <div className={styles.logoText}>
             <p>created by @asatryanhov</p>
