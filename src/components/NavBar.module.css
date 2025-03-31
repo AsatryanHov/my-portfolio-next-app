@@ -1,78 +1,144 @@
+/* Базовые стили навигационной панели */
 .navbar {
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: center;
+    /* background-color: #fff; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 100%;
+    z-index: 100;
+    box-sizing: border-box;
+    /* Добавлено */
 }
 
 .navList {
     display: flex;
-    /* justify-content: space-between; */
     list-style: none;
-    gap: 40px;
     margin: 0;
     padding: 0;
+    justify-content: center;
 }
 
 .navList li {
-
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    margin: 0 1rem;
 }
 
-/* Теперь ссылка занимает всю область внутри <li> */
 .link {
-    display: block;
-    /* Делает всю область кликабельной */
-    width: 80px;
-    /* Растягивает ссылку по ширине */
-    padding: 0.5rem 1rem;
-    /* Соответствует размеру <li> */
-    border-radius: 4px;
-    /* Закругление краёв */
-    text-align: center;
-    /* Выравнивание текста */
-    text-decoration: none;
-    /* Убирает стандартное подчеркивание */
+    /* color: #333; */
     color: #fff;
-    /* Цвет текста */
-    /* border: solid 1px #fff; */
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+    transition: color 0.3s ease;
 }
 
 .link:hover {
     background-color: #ffffff;
     color: #333;
+    /* color: #0070f3;  */
 }
 
 .active .link {
     border: solid 1px #fff;
-    /* color: #a0351a; */
+    /* color: #0070f3; */
+    font-weight: 700;
 }
 
-@media only screen and (max-width: 450px) {
+/* Кнопка гамбургер-меню */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 200;
+}
 
-    /* Styles for iPhone 14 Pro Max and similar devices */
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Оверлей для мобильных устройств */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        background-color: white;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        padding-top: 60px;
+        max-width: 100%;
+        /* color: #333; */
+        /* Добавлено */
+    }
+
+    .navbar.open {
+        right: 0;
+    }
+
     .navList {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-        gap: 18px;
-
+    .navList li {
+        margin: 1rem;
+        width: 100%;
     }
 
     .link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 14px;
-        /* Делает всю область кликабельной */
-        width: 60px;
-        /* Растягивает ссылку по ширине */
-        padding: 0.5rem 0.5rem;
-        /* text-align: center; */
-
+        display: block;
+        padding: 0.5rem 0;
+        font-size: 1.2rem;
+        color: #100938;
+        /* border: 2px solid black; */
+        border-radius: 10px;
     }
 
-    /* .navList li {
-        
-        border-radius: 4px;
-        transition: background-color 0.3s ease;
-    } */
+    .active .link {
+        border: solid 4px #100938;
+        /* color: #0070f3; */
+        font-weight: 700;
+    }
 }

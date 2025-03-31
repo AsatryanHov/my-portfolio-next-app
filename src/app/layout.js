@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google"; // Импортируем шри�
 
 import NavBar from "@/components/NavBar";
 import VantaBackground from "@/components/VantaBackground";
+import SplashScreen from "@/components/SplashScreen";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -11,16 +12,6 @@ const montserrat = Montserrat({
   display: "swap", // Улучшает производительность загрузки шрифта
 });
 
-// const montserrat = Montserrat({
-//   subsets: ['latin'],
-//   weight: ["400", "600", "700"], // Убедитесь, что значения обёрнуты в кавычки
-//   display: "swap",
-// });
-
-// export const metadata = {
-//   title: "AsatryanHov",
-//   description: "my portfolio",
-// };
 export const metadata = {
   metadataBase: new URL("https://asatryanhov.pl"),
   title: "AsatryanHov",
@@ -85,7 +76,10 @@ export default function RootLayout({ children }) {
       <body suppressHydrationWarning={true} className={montserrat.className}>
         <VantaBackground />
         <NavBar />
-        <main>{children}</main>
+
+        <SplashScreen>
+          <main>{children}</main>
+        </SplashScreen>
       </body>
     </html>
   );

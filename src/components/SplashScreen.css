@@ -1,0 +1,22 @@
+.splash-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.spinner {
+    width: 150px;
+    height: 150px;
+    border: 6px solid #e0e0e0;
+    border-top: 6px solid #333;
+    border-radius: 50%;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
