@@ -15,7 +15,7 @@ export default function SplashScreen({ children }) {
       sessionStorage.setItem("hasVisited", "true");
       const timer = setTimeout(() => {
         setShowSplash(false);
-      }, 2000);
+      }, 1500);
 
       return () => clearTimeout(timer);
     }

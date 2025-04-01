@@ -1,4 +1,5 @@
 import { Montserrat } from "next/font/google"; // Импортируем шрифт
+import { WebVitals } from "@/components/web-vitals";
 // import { Montserrat } from 'next/font/google';
 
 import NavBar from "@/components/NavBar";
@@ -74,10 +75,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body suppressHydrationWarning={true} className={montserrat.className}>
+        <WebVitals />
         <VantaBackground />
-        <NavBar />
 
         <SplashScreen>
+          <NavBar />
           <main>{children}</main>
         </SplashScreen>
       </body>
