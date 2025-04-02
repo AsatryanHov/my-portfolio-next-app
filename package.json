@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postexport": "copy .htaccess out\\.htaccess",
     "postbuild": "next-sitemap"
   },
   "dependencies": {

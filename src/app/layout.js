@@ -96,7 +96,7 @@ export default function RootLayout({ children }) {
         {/* End Google Tag Manager */}
       </head>
       <body suppressHydrationWarning={true} className={montserrat.className}>
-        <WebVitals />
+        {/* <WebVitals /> */}
         <VantaBackground />
 
         <SplashScreen>
