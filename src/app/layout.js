@@ -1,5 +1,6 @@
 import { Montserrat } from "next/font/google"; // Импортируем шрифт
 import { WebVitals } from "@/components/web-vitals";
+import Script from "next/script";
 // import { Montserrat } from 'next/font/google';
 
 import NavBar from "@/components/NavBar";
@@ -74,6 +75,26 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="8_MFWcHpjMx1tg5YujMa1yTpFFblimew-iYfpjeyuYM"
+        />
+        {/* Google Tag Manager */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-SE7G9LZSZ8"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SE7G9LZSZ8');
+          `}
+        </Script>
+        {/* End Google Tag Manager */}
+      </head>
       <body suppressHydrationWarning={true} className={montserrat.className}>
         <WebVitals />
         <VantaBackground />

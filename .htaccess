@@ -1,0 +1,10 @@
+
+
+RewriteEngine On
+RewriteBase /
+
+# Если файл или папка не найдены — редиректим на index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L]
+

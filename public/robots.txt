@@ -1,0 +1,22 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /drafts
+Disallow: /secret
+
+# Host
+Host: https://asatryanhov.pl
+
+# Sitemaps
+Sitemap: https://asatryanhov.pl/sitemap.xml
+Sitemap: https://asatryanhov.github.io/learn_front-end/
+Sitemap: https://asatryanhov.github.io/PLN_AMD_converter/
+Sitemap: https://asatryanhov.github.io/color-pallets/
+Sitemap: https://asatryanhov.github.io/QR_generator/
+Sitemap: https://asatryanhov.github.io/web-dev-tools/
+Sitemap: https://asatryanhov.github.io/my-geoposition/
+Sitemap: https://asatryanhov.github.io/my-ip-address-info/
+Sitemap: https://asatryanhov.github.io/europa-super-league/
+Sitemap: https://asatryanhov.github.io/connection-speed-test/
+Sitemap: https://football-super-league-next-app.vercel.app/
